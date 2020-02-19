@@ -1,0 +1,165 @@
+/* Global css */
+
+header {
+  background-color: #212121;
+  color: #f9f9f9;
+  position: fixed;
+  width: 100%;
+  z-index: 100
+}
+
+main {
+  background-color: #212121;
+  padding-top: 60px;
+}
+
+/* Rooms */
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+.cross:hover {
+  animation: spin 0.5s;
+}
+
+.room-container {
+  background-color: #212121;
+  position: fixed;
+  height: 90vh;
+}
+
+.room {
+  cursor: pointer;
+  background-color: #4B515D !important;
+}
+
+.card-title {
+  color: #f9f9f9
+}
+
+/* Messages */
+
+.messages-container {
+  height: 80vh;
+  overflow: auto;
+  background-image: url("http://www.1980-house-recordings.com/images/index.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.message {
+  border-radius: 	5px !important;
+  background-color: #dcf8c6 !important;
+  min-width: 20%;
+  max-width: fit-content;
+}
+
+.time-font-weight {
+  font-weight: 100;
+}
+
+.message-font-weight {
+  font-weight: 700;
+}
+
+/* Input field */
+
+.input-field-container {
+  background-color: #212121;
+}
+
+#form-control-auto {
+  background-color: #2E2E2E !important;
+  border: none !important;
+  border-radius: 	1.5625rem !important;
+  color: #f9f9f9 !important;
+  padding: 10px 10px 10px 10px;
+  height: 40px;
+  width: 545px;
+  resize: none;
+}
+
+.css-y1c0xs::-webkit-scrollbar {
+  display: none;
+}
+
+.form-control {
+  background-color: #2E2E2E !important;
+  border-radius: 	1.5625rem !important;
+  border: none !important;
+  color: #f9f9f9 !important
+}
+
+.emoji-mart {
+  position: absolute;
+  z-index: 1000;
+  top: -545%;
+  left: 47%;
+  background-color: #2E2E2E !important;
+}
+
+.btn-send {
+  background-color: #4B515D !important;
+}
+
+.giphy-picker {
+  position: absolute !important;
+  top: -410px;
+  left: 530px;
+  background-color: #2E2E2E !important;
+}
+
+/* Members */
+
+.member-container {
+  background-color: #212121;
+  position: fixed;
+  height: 72vh;
+}
+
+.member {
+  background-color: #4B515D !important;
+}
+
+.login-page {
+  background-image: url('./FullColor_1280x1024_72dpi.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-position: 50%;
+}
+
+.login-input {
+  width: 25%;
+  padding-left: 0.8rem;
+}
+
+.login-form {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  display: inline;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.login-input, .login-button {
+  background-color: white;
+  border: 0.5px solid rgba(29, 29, 31, 0.8);
+  border-radius: 0.1875rem;
+  height: 2.5rem;
+  margin-right: 2rem;
+  font-size: 1.4rem;
+}
